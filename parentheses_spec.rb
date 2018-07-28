@@ -15,6 +15,13 @@ RSpec.describe "method passed one ) and no (" do
   end
 end
 
+RSpec.describe "method passed one () and no )" do
+  it 'should return false' do
+    result = valid_parentheses(")")
+    expect(result).to eq(false)
+  end
+end
+
 RSpec.describe "method passed one ) and then one (" do
   it 'should return false' do
     result = valid_parentheses(")(")
